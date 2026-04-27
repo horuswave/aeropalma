@@ -7,9 +7,9 @@ export default function Footer() {
   const companyLinks = t.raw("companyLinks") as string[];
 
   return (
-    <footer style={{ background: "#0A0A0A", borderTop: "1px solid rgba(255,255,255,0.06)", padding: "64px 0 32px" }}>
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 40px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "60px", marginBottom: "60px" }}>
+    <footer style={{ background: "#0A0A0A", borderTop: "1px solid rgba(255,255,255,0.06)", padding: "clamp(40px, 7vw, 64px) 0 32px" }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px, 5vw, 40px)" }}>
+        <div className="footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "clamp(32px, 5vw, 60px)", marginBottom: "clamp(40px, 6vw, 60px)" }}>
 
           {/* Brand */}
           <div>
@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <h4 style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: "20px" }}>{t("company")}</h4>
             {companyLinks.map((s) => (
-              <a key={s} href={`#${s.toLowerCase()}`} style={{ display: "block", fontSize: "14px", color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: "10px", transition: "color 0.2s ease" }}
+              <a key={s} href={"#" + s.toLowerCase()} style={{ display: "block", fontSize: "14px", color: "rgba(255,255,255,0.55)", textDecoration: "none", marginBottom: "10px", transition: "color 0.2s ease" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#CE5605")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
               >{s}</a>
@@ -61,13 +61,32 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={{ paddingTop: "28px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "16px" }}>
+        <div style={{ paddingTop: "28px", borderTop: "1px solid rgba(255,255,255,0.06)", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" }}>
           <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.25)" }}>
             © {new Date().getFullYear()} AeroPalma. {t("copyright")}
           </span>
           <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>aeropalma.aero</span>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .footer-grid {
+            grid-template-columns: 1fr 1fr !important;
+          }
+          .footer-grid > div:first-child {
+            grid-column: span 2;
+          }
+        }
+        @media (max-width: 480px) {
+          .footer-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .footer-grid > div:first-child {
+            grid-column: span 1;
+          }
+        }
+      `}</style>
     </footer>
   );
 }

@@ -15,12 +15,12 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" ref={ref} style={{ padding: "120px 0", background: "var(--bg-secondary)" }}>
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 40px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "100px", alignItems: "center" }}>
+    <section id="about" ref={ref} style={{ padding: "clamp(60px, 10vw, 120px) 0", background: "var(--bg-secondary)" }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px, 5vw, 40px)" }}>
+        <div className="about-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(40px, 7vw, 100px)", alignItems: "center" }}>
 
           {/* Image stack */}
-          <div style={{ position: "relative", height: "560px" }}>
+          <div className="about-image-stack" style={{ position: "relative", height: "560px" }}>
             <div style={{ position: "absolute", top: 0, left: 0, right: "80px", bottom: "80px", borderRadius: "8px", overflow: "hidden", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateX(-24px)", transition: "all 0.7s ease" }}>
               <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80&auto=format&fit=crop" alt="Airport operations" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
             </div>
@@ -36,13 +36,13 @@ export default function About() {
           {/* Content */}
           <div style={{ opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(24px)", transition: "all 0.7s ease 0.15s" }}>
             <div className="section-label" style={{ marginBottom: "24px" }}>{t("sectionLabel")}</div>
-            <h2 style={{ fontSize: "clamp(32px, 3.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, color: "var(--text-primary)", marginBottom: "28px" }}>
+            <h2 style={{ fontSize: "clamp(28px, 3.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, color: "var(--text-primary)", marginBottom: "28px" }}>
               {t("title")} <span className="text-gradient">{t("titleAccent")}</span>
             </h2>
-            <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--text-secondary)", marginBottom: "20px" }}>{t("body1")}</p>
-            <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--text-secondary)", marginBottom: "40px" }}>{t("body2")}</p>
+            <p style={{ fontSize: "clamp(14px, 1.5vw, 16px)", lineHeight: 1.8, color: "var(--text-secondary)", marginBottom: "20px" }}>{t("body1")}</p>
+            <p style={{ fontSize: "clamp(14px, 1.5vw, 16px)", lineHeight: 1.8, color: "var(--text-secondary)", marginBottom: "40px" }}>{t("body2")}</p>
 
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "40px" }}>
+            <div className="about-badges" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "40px" }}>
               {badges.map((item) => (
                 <div key={item.title} style={{ display: "flex", gap: "14px", alignItems: "flex-start", padding: "16px", background: "var(--card-bg)", border: "1px solid var(--border)", borderRadius: "8px" }}>
                   <span style={{ fontSize: "20px" }}>{item.icon}</span>
@@ -57,6 +57,23 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .about-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .about-image-stack {
+            height: 300px !important;
+            order: -1;
+          }
+        }
+        @media (max-width: 480px) {
+          .about-badges {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

@@ -13,8 +13,8 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = `Hello AeroPalma,\n\nName: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\nService: ${form.service}\n\nMessage: ${form.message}`;
-    window.open(`https://wa.me/258851013008?text=${encodeURIComponent(msg)}`, "_blank");
+    const msg = "Hello AeroPalma,\n\nName: " + form.name + "\nCompany: " + form.company + "\nEmail: " + form.email + "\nService: " + form.service + "\n\nMessage: " + form.message;
+    window.open("https://wa.me/258851013008?text=" + encodeURIComponent(msg), "_blank");
     setSent(true);
   };
 
@@ -23,6 +23,7 @@ export default function Contact() {
     borderRadius: "4px", padding: "14px 18px", fontSize: "14px",
     color: "var(--text-primary)", outline: "none",
     fontFamily: "'Lato', sans-serif", transition: "border-color 0.2s ease",
+    boxSizing: "border-box",
   };
   const lbl: React.CSSProperties = {
     fontSize: "11px", fontWeight: 700, letterSpacing: "0.12em",
@@ -31,17 +32,17 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ padding: "120px 0", background: "var(--bg-secondary)" }}>
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 40px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "100px", alignItems: "flex-start" }}>
+    <section id="contact" style={{ padding: "clamp(60px, 10vw, 120px) 0", background: "var(--bg-secondary)" }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px, 5vw, 40px)" }}>
+        <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "clamp(40px, 7vw, 100px)", alignItems: "flex-start" }}>
 
           {/* Info side */}
           <div>
             <div className="section-label" style={{ marginBottom: "24px" }}>{t("sectionLabel")}</div>
-            <h2 style={{ fontSize: "clamp(32px, 3.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, color: "var(--text-primary)", marginBottom: "24px" }}>
+            <h2 style={{ fontSize: "clamp(28px, 3.5vw, 52px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, color: "var(--text-primary)", marginBottom: "24px" }}>
               {t("title")} <span className="text-gradient">{t("titleAccent")}</span>
             </h2>
-            <p style={{ fontSize: "16px", lineHeight: 1.8, color: "var(--text-secondary)", marginBottom: "48px" }}>
+            <p style={{ fontSize: "clamp(14px, 1.5vw, 16px)", lineHeight: 1.8, color: "var(--text-secondary)", marginBottom: "48px" }}>
               {t("description")}
             </p>
 
@@ -64,7 +65,7 @@ export default function Contact() {
           </div>
 
           {/* Form */}
-          <div style={{ background: "var(--card-bg)", border: "1px solid var(--border)", borderRadius: "8px", padding: "48px" }}>
+          <div style={{ background: "var(--card-bg)", border: "1px solid var(--border)", borderRadius: "8px", padding: "clamp(24px, 4vw, 48px)" }}>
             {sent ? (
               <div style={{ textAlign: "center", padding: "40px 0" }}>
                 <div style={{ fontSize: "48px", marginBottom: "16px" }}>✈️</div>
@@ -75,7 +76,7 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit}>
                 <h3 style={{ fontSize: "22px", fontWeight: 900, color: "var(--text-primary)", marginBottom: "32px" }}>{t("formTitle")}</h3>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
+                <div className="form-name-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "16px" }}>
                   <div><label style={lbl}>{t("fieldName")} *</label><input name="name" required value={form.name} onChange={handleChange} placeholder={t("placeholderName")} style={field} /></div>
                   <div><label style={lbl}>{t("fieldCompany")}</label><input name="company" value={form.company} onChange={handleChange} placeholder={t("placeholderCompany")} style={field} /></div>
                 </div>
@@ -107,6 +108,12 @@ export default function Contact() {
       </div>
       <style jsx>{`
         input:focus, textarea:focus, select:focus { border-color: #CE5605 !important; }
+        @media (max-width: 768px) {
+          .contact-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .form-name-row { grid-template-columns: 1fr !important; }
+        }
       `}</style>
     </section>
   );

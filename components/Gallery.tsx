@@ -23,19 +23,20 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section id="gallery" ref={ref} style={{ padding: "120px 0", background: "var(--bg)" }}>
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 40px" }}>
-        <div style={{ marginBottom: "64px" }}>
+    <section id="gallery" ref={ref} style={{ padding: "clamp(60px, 10vw, 120px) 0", background: "var(--bg)" }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px, 5vw, 40px)" }}>
+        <div style={{ marginBottom: "clamp(40px, 6vw, 64px)" }}>
           <div className="section-label" style={{ marginBottom: "20px" }}>{t("sectionLabel")}</div>
-          <h2 style={{ fontSize: "clamp(32px, 4vw, 56px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, color: "var(--text-primary)" }}>
+          <h2 style={{ fontSize: "clamp(28px, 4vw, 56px)", fontWeight: 900, letterSpacing: "-0.03em", lineHeight: 1.1, color: "var(--text-primary)" }}>
             {t("title")} <span className="text-gradient">{t("titleAccent")}</span>
           </h2>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "16px" }}>
+        <div className="gallery-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "clamp(8px, 1.5vw, 16px)" }}>
           {imageSrcs.map((img, i) => (
             <div key={i}
-              style={{ gridColumn: img.wide ? "span 2" : "span 1", position: "relative", borderRadius: "8px", overflow: "hidden", aspectRatio: img.wide ? "16/7" : "4/3", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(24px)", transition: `all 0.6s ease ${i * 0.08}s`, cursor: "pointer" }}
+              className={"gallery-item" + (img.wide ? " gallery-wide" : "")}
+              style={{ gridColumn: img.wide ? "span 2" : "span 1", position: "relative", borderRadius: "8px", overflow: "hidden", aspectRatio: img.wide ? "16/7" : "4/3", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(24px)", transition: "all 0.6s ease " + (i * 0.08) + "s", cursor: "pointer" }}
               onMouseEnter={(e) => { const el = e.currentTarget.querySelector("img") as HTMLImageElement; if (el) el.style.transform = "scale(1.04)"; }}
               onMouseLeave={(e) => { const el = e.currentTarget.querySelector("img") as HTMLImageElement; if (el) el.style.transform = "scale(1)"; }}
             >
@@ -48,6 +49,18 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 640px) {
+          .gallery-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .gallery-wide {
+            grid-column: span 1 !important;
+            aspect-ratio: 16/9 !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
