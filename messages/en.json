@@ -65,17 +65,6 @@
           "Access Management",
           "Threat Assessment"
         ]
-      },
-      {
-        "id": "04",
-        "title": "Airport Ground Handling",
-        "description": "End-to-end ramp and ground support for commercial and private aircraft serving the LNG sector. From marshalling and baggage handling to aircraft towing and cabin servicing — precise, safe, and on schedule.",
-        "features": [
-          "Aircraft Marshalling",
-          "Baggage Handling",
-          "Aircraft Towing",
-          "Cabin Servicing"
-        ]
       }
     ]
   },
@@ -84,7 +73,7 @@
     "title": "Mozambique's first private",
     "titleAccent": "airport operator.",
     "body1": "AeroPalma is a proudly Mozambican company and the country's first private airport operator — operating at Afungi Airport, the strategic gateway to Mozambique's LNG sector, serving TotalEnergies and ExxonMobil with local expertise and international standards.",
-    "body2": "From airport management and security to ground handling and infrastructure maintenance — our teams operate with precision 24/7, because in aviation, reliability is non-negotiable. We are fully aligned with IACM and ICAO standards.",
+    "body2": "From airport management and security to infrastructure maintenance — our teams operate with precision 24/7, because in aviation, reliability is non-negotiable. We are fully aligned with IACM and ICAO standards.",
     "cta": "Work With Us",
     "badges": [
       {
@@ -185,7 +174,6 @@
     "items": [
       { "label": "Airport Operations" },
       { "label": "Aviation Security" },
-      { "label": "Ground Handling" },
       { "label": "Fuel Systems" },
       { "label": "Runway View" }
     ]

@@ -65,17 +65,6 @@
           "Gestão de Acessos",
           "Avaliação de Ameaças"
         ]
-      },
-      {
-        "id": "04",
-        "title": "Assistência em Terra",
-        "description": "Suporte completo de rampa e apoio em terra para aeronaves comerciais e privadas ao serviço do sector LNG. Do sinaleiro e manuseamento de bagagens ao reboque de aeronaves e serviços de cabine — precisos, seguros e dentro do horário.",
-        "features": [
-          "Sinalização de Aeronaves",
-          "Manuseamento de Bagagens",
-          "Reboque de Aeronaves",
-          "Serviços de Cabine"
-        ]
       }
     ]
   },
@@ -84,7 +73,7 @@
     "title": "O primeiro operador privado de aeroporto",
     "titleAccent": "de Moçambique.",
     "body1": "A AeroPalma é uma empresa orgulhosamente moçambicana e o primeiro operador privado de aeroporto do país — operando no Aeroporto de Afungi, a porta de entrada estratégica para o sector LNG de Moçambique, ao serviço da TotalEnergies e ExxonMobil com experiência local e padrões internacionais.",
-    "body2": "Da gestão aeroportuária e segurança à assistência em terra e manutenção de infraestruturas — as nossas equipas operam com precisão 24/7, porque na aviação, a fiabilidade não é negociável. Estamos totalmente alinhados com as normas IACM e ICAO.",
+    "body2": "Da gestão aeroportuária e segurança à manutenção de infraestruturas — as nossas equipas operam com precisão 24/7, porque na aviação, a fiabilidade não é negociável. Estamos totalmente alinhados com as normas IACM e ICAO.",
     "cta": "Trabalhe Connosco",
     "badges": [
       {
@@ -185,7 +174,6 @@
     "items": [
       { "label": "Operações Aeroportuárias" },
       { "label": "Segurança Aeronáutica" },
-      { "label": "Assistência em Terra" },
       { "label": "Sistemas de Combustível" },
       { "label": "Vista da Pista" }
     ]
@@ -213,7 +201,6 @@
       "Gestão Aeroportuária",
       "Manutenção Aeroportuária",
       "Serviços de Segurança Aeronáutica",
-      "Assistência em Terra",
       "Múltiplos Serviços"
     ],
     "submitBtn": "Enviar via WhatsApp",
@@ -229,9 +216,7 @@
     "serviceLinks": [
       "Gestão Aeroportuária",
       "Manutenção Aeroportuária",
-      "Segurança Aeronáutica",
-      "Assistência em Terra"
-    ],
+      "Segurança Aeronáutica"    ],
     "companyLinks": ["Sobre", "Galeria", "Parceiros", "Contacto"],
     "copyright": "Todos os direitos reservados."
   },
