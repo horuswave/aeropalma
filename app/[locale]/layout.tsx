@@ -3,8 +3,8 @@ import { locales } from "@/i18n/routing";
 import "../globals.css";
 
 export const metadata: Metadata = {
-  title: "AeroPalma — Afunfi Airport Operator",
-  description: "Mozambican airport operator at Afunfi Airport.",
+  title: "AeroPalma — Afungi Airport Operator",
+  description: "Mozambican airport operator at Afungi Airport.",
 };
 
 export function generateStaticParams() {

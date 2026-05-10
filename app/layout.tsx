@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AeroPalma — Afunfi Airport Operator",
-  description: "AeroPalma is a Mozambican company providing Aviation Security, Hydro Maintenance, and Ground Handling Services at Afunfi Airport.",
+  title: "AeroPalma — Afungi Airport Operator",
+  description: "AeroPalma is a Mozambican company providing Aviation Security, Hydro Maintenance, and Ground Handling Services at Afungi Airport.",
 };
 
 export default function RootLayout({
