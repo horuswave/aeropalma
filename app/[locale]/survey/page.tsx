@@ -304,24 +304,17 @@ export default function SurveyPage() {
           <div style={{ textAlign: "center", padding: "40px 0" }}>
             <div
               style={{
-                fontSize: "48px",
-                marginBottom: "16px",
-                letterSpacing: "-2px",
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "24px",
               }}
             >
-              ✈️
+              <img
+                src="/logo.svg"
+                alt="AeroPalma"
+                style={{ height: "72px", width: "auto" }}
+              />
             </div>
-            <h1
-              style={{
-                fontSize: "clamp(22px, 4vw, 32px)",
-                fontWeight: 900,
-                color: "var(--text-primary)",
-                marginBottom: "10px",
-                letterSpacing: "-0.03em",
-              }}
-            >
-              Afungi Airport
-            </h1>
             <p
               style={{
                 fontSize: "15px",
@@ -392,7 +385,19 @@ export default function SurveyPage() {
         {/* Thank you screen */}
         {submitted && t && (
           <div style={{ textAlign: "center", padding: "40px 0" }}>
-            <div style={{ fontSize: "56px", marginBottom: "20px" }}>✅</div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "20px",
+              }}
+            >
+              <img
+                src="/logo.svg"
+                alt="AeroPalma"
+                style={{ height: "64px", width: "auto" }}
+              />
+            </div>
             <h2
               style={{
                 fontSize: "28px",
@@ -422,6 +427,20 @@ export default function SurveyPage() {
         {/* Survey form */}
         {lang && !submitted && t && (
           <form onSubmit={handleSubmit}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "28px",
+                paddingTop: "8px",
+              }}
+            >
+              <img
+                src="/logo.svg"
+                alt="AeroPalma"
+                style={{ height: "60px", width: "auto" }}
+              />
+            </div>
             <h1
               style={{
                 fontSize: "clamp(20px, 3.5vw, 28px)",
