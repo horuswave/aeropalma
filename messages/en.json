@@ -2,66 +2,149 @@
   "nav": {
     "services": "Services",
     "about": "About",
-    "clients": "Clients",
+    "partners": "Partners",
     "gallery": "Gallery",
     "contact": "Contact",
     "cta": "Get In Touch"
   },
   "hero": {
-    "label": "Afungi Airport Operator",
-    "title1": "Elevating",
-    "titleAccent": "Aviation",
-    "title2": "Standards in Mozambique.",
-    "description": "AeroPalma is a Mozambican airport operator delivering world-class aviation security, hydro maintenance, and ground handling services to the energy sector's most demanding clients.",
+    "label": "Mozambique's First Private Airport Operator",
+    "title1": "World-Class",
+    "titleAccent": "Airport",
+    "title2": "Operations in Mozambique.",
+    "description": "AeroPalma is Mozambique's first private airport operator — delivering world-class airport management, maintenance, and aviation security services to the LNG energy sector at Afungi Airport.",
     "ctaPrimary": "Our Services",
     "ctaSecondary": "Contact Us",
-    "stat1Value": "3+", "stat1Label": "Core Services",
-    "stat2Value": "2",  "stat2Label": "Global Clients",
-    "stat3Value": "100%","stat3Label": "Mozambican"
+    "stat1Value": "4+",
+    "stat1Label": "Core Services",
+    "stat2Value": "2",
+    "stat2Label": "Global Clients",
+    "stat3Value": "100%",
+    "stat3Label": "Mozambican"
   },
   "clients": {
     "label": "Trusted By",
-    "tagline": "Serving the energy sector at Afungi Airport"
+    "tagline": "Serving the LNG energy sector at Afungi Airport"
   },
   "services": {
     "sectionLabel": "What We Do",
-    "title": "Three pillars of",
+    "title": "Four pillars of",
     "titleAccent": "aviation excellence.",
-    "subtitle": "Every service we deliver is built on years of operational experience and an unwavering commitment to safety.",
+    "subtitle": "Every service we deliver is built on years of operational experience and an unwavering commitment to safety, aligned with IACM and ICAO standards.",
     "cta": "Request a Quote",
     "items": [
       {
         "id": "01",
-        "title": "Aviation Security Services",
-        "description": "Comprehensive airside security operations ensuring full regulatory compliance. Our trained personnel deliver perimeter control, passenger screening, access management, and threat assessment to the highest international standards.",
-        "features": ["Perimeter Control", "Passenger Screening", "Access Management", "Threat Assessment"]
+        "title": "Airport Management",
+        "description": "As Mozambique's first private airport operator, AeroPalma delivers comprehensive airport management for Afungi Airport — the strategic gateway to Mozambique's LNG sector. We manage day-to-day operations, regulatory compliance, and continuous service improvement.",
+        "features": [
+          "Operations Management",
+          "Regulatory Compliance",
+          "Safety Oversight",
+          "LNG Sector Support"
+        ]
       },
       {
         "id": "02",
-        "title": "Hydro Maintenance",
-        "description": "Specialized hydrant fueling system inspection, maintenance, and certification services. We keep your aviation fuel infrastructure in peak operational condition, reducing downtime and ensuring uninterrupted flight operations.",
-        "features": ["Hydrant Inspection", "System Certification", "Preventive Maintenance", "Emergency Response"]
+        "title": "Airport Maintenance",
+        "description": "Specialized maintenance of airport infrastructure, equipment, and systems. From runway lighting and terminal facilities to critical hydrant fueling systems — we keep Afungi Airport in peak operational condition, minimizing downtime for energy sector clients.",
+        "features": [
+          "Infrastructure Maintenance",
+          "Hydrant Systems",
+          "Equipment Servicing",
+          "Preventive Programmes"
+        ]
       },
       {
         "id": "03",
-        "title": "Ground Handling Services",
-        "description": "End-to-end ramp and ground support for commercial and private aircraft. From marshalling and baggage handling to aircraft towing and cabin servicing — precise, safe, and on schedule.",
-        "features": ["Aircraft Marshalling", "Baggage Handling", "Aircraft Towing", "Cabin Servicing"]
+        "title": "Aviation Security Services",
+        "description": "Comprehensive airside security operations ensuring full regulatory compliance with IACM and ICAO standards. Our trained personnel deliver perimeter control, passenger screening, access management, and threat assessment to the highest international standards.",
+        "features": [
+          "Perimeter Control",
+          "Passenger Screening",
+          "Access Management",
+          "Threat Assessment"
+        ]
+      },
+      {
+        "id": "04",
+        "title": "Airport Ground Handling",
+        "description": "End-to-end ramp and ground support for commercial and private aircraft serving the LNG sector. From marshalling and baggage handling to aircraft towing and cabin servicing — precise, safe, and on schedule.",
+        "features": [
+          "Aircraft Marshalling",
+          "Baggage Handling",
+          "Aircraft Towing",
+          "Cabin Servicing"
+        ]
       }
     ]
   },
   "about": {
     "sectionLabel": "Who We Are",
-    "title": "Mozambique's premier airport",
-    "titleAccent": "operations partner.",
-    "body1": "AeroPalma is a proudly Mozambican company operating at Afungi Airport, serving the specialized aviation needs of the global energy sector with local expertise and international standards.",
-    "body2": "From securing aircraft to managing ground operations and maintaining critical fuel infrastructure — our teams operate with precision 24/7, because in aviation, reliability is non-negotiable.",
+    "title": "Mozambique's first private",
+    "titleAccent": "airport operator.",
+    "body1": "AeroPalma is a proudly Mozambican company and the country's first private airport operator — operating at Afungi Airport, the strategic gateway to Mozambique's LNG sector, serving TotalEnergies and ExxonMobil with local expertise and international standards.",
+    "body2": "From airport management and security to ground handling and infrastructure maintenance — our teams operate with precision 24/7, because in aviation, reliability is non-negotiable. We are fully aligned with IACM and ICAO standards.",
     "cta": "Work With Us",
     "badges": [
-      { "icon": "🇲🇿", "title": "100% Mozambican", "desc": "Locally owned & operated" },
-      { "icon": "✈️", "title": "Afungi Airport", "desc": "Strategic gateway location" },
-      { "icon": "🛡️", "title": "ICAO Aligned", "desc": "International safety standards" },
-      { "icon": "⚡", "title": "24/7 Operations", "desc": "Always on, always ready" }
+      {
+        "icon": "🇲🇿",
+        "title": "100% Mozambican",
+        "desc": "Locally owned & operated"
+      },
+      {
+        "icon": "✈️",
+        "title": "Afungi Airport",
+        "desc": "Strategic LNG gateway"
+      },
+      {
+        "icon": "🛡️",
+        "title": "IACM & ICAO",
+        "desc": "Dual regulatory alignment"
+      },
+      {
+        "icon": "⚡",
+        "title": "24/7 Operations",
+        "desc": "Always on, always ready"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Our Partners",
+    "title": "Built on trusted",
+    "titleAccent": "partnerships.",
+    "subtitle": "AeroPalma operates within a network of key institutional partners and regulatory bodies that ensure the highest standards of safety and service.",
+    "items": [
+      {
+        "category": "Key Partners",
+        "list": [
+          {
+            "name": "EDM — Air Navigation Services",
+            "desc": "Ensuring safe and efficient air traffic management at Afungi Airport."
+          },
+          {
+            "name": "INAM — Aeronautical Meteorological Services",
+            "desc": "Providing accurate meteorological data critical for flight safety operations."
+          },
+          {
+            "name": "Petromoc — Fuel Services Partner",
+            "desc": "Reliable aviation fuel supply supporting uninterrupted flight operations."
+          }
+        ]
+      },
+      {
+        "category": "Standards & Regulators",
+        "list": [
+          {
+            "name": "IACM — Instituto de Aviação Civil de Moçambique",
+            "desc": "The national civil aviation authority governing all operations at Mozambican airports."
+          },
+          {
+            "name": "ICAO — International Civil Aviation Organization",
+            "desc": "The global regulatory framework guiding our operational and safety standards."
+          }
+        ]
+      }
     ]
   },
   "stats": {
@@ -69,10 +152,30 @@
     "title": "Performance that speaks",
     "titleAccent": "for itself.",
     "items": [
-      { "value": "3", "suffix": "+", "label": "Core Services", "desc": "End-to-end aviation support" },
-      { "value": "24", "suffix": "/7", "label": "Operations", "desc": "Round the clock availability" },
-      { "value": "2", "suffix": "", "label": "Global Clients", "desc": "TotalEnergies & ExxonMobil" },
-      { "value": "100", "suffix": "%", "label": "Mozambican", "desc": "Proud local ownership" }
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "Core Services",
+        "desc": "End-to-end airport operations"
+      },
+      {
+        "value": "24",
+        "suffix": "/7",
+        "label": "Operations",
+        "desc": "Round the clock availability"
+      },
+      {
+        "value": "2",
+        "suffix": "",
+        "label": "Global Clients",
+        "desc": "TotalEnergies & ExxonMobil"
+      },
+      {
+        "value": "100",
+        "suffix": "%",
+        "label": "Mozambican",
+        "desc": "Proud local ownership"
+      }
     ]
   },
   "gallery": {
@@ -80,9 +183,9 @@
     "title": "Operations in",
     "titleAccent": "motion.",
     "items": [
-      { "label": "Ground Operations" },
+      { "label": "Airport Operations" },
       { "label": "Aviation Security" },
-      { "label": "Ramp Services" },
+      { "label": "Ground Handling" },
       { "label": "Fuel Systems" },
       { "label": "Runway View" }
     ]
@@ -91,7 +194,7 @@
     "sectionLabel": "Get In Touch",
     "title": "Ready to elevate your",
     "titleAccent": "operations?",
-    "description": "Contact our team to discuss how AeroPalma can support your aviation and energy operations at Afungi Airport.",
+    "description": "Contact our team to discuss how AeroPalma can support your aviation and LNG energy operations at Afungi Airport.",
     "whatsappLabel": "WhatsApp",
     "locationLabel": "Location",
     "locationValue": "Afungi Airport, Mozambique",
@@ -106,19 +209,30 @@
     "placeholderEmail": "john@company.com",
     "placeholderService": "Select a service…",
     "placeholderMessage": "Tell us about your operational requirements…",
-    "serviceOptions": ["Aviation Security Services", "Hydro Maintenance", "Ground Handling Services", "Multiple Services"],
+    "serviceOptions": [
+      "Airport Management",
+      "Airport Maintenance",
+      "Aviation Security Services",
+      "Airport Ground Handling",
+      "Multiple Services"
+    ],
     "submitBtn": "Send via WhatsApp",
     "successTitle": "Message Sent!",
     "successBody": "WhatsApp has been opened. We'll get back to you shortly.",
     "successBtn": "Send Another"
   },
   "footer": {
-    "tagline": "Mozambique's premier aviation operator at Afungi Airport.",
+    "tagline": "Mozambique's first private airport operator at Afungi Airport.",
     "services": "Services",
     "company": "Company",
     "clients": "Clients",
-    "serviceLinks": ["Aviation Security", "Hydro Maintenance", "Ground Handling"],
-    "companyLinks": ["About", "Gallery", "Clients", "Contact"],
+    "serviceLinks": [
+      "Airport Management",
+      "Airport Maintenance",
+      "Aviation Security",
+      "Ground Handling"
+    ],
+    "companyLinks": ["About", "Gallery", "Partners", "Contact"],
     "copyright": "All rights reserved."
   },
   "whatsapp": {

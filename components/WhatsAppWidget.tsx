@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { X, Hand } from "lucide-react";
 
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,12 +30,14 @@ export default function WhatsAppWidget() {
               onClick={() => setIsOpen(false)}
               className="ml-auto text-white/30 hover:text-white transition-colors"
             >
-              ✕
+              <X size={16} />
             </button>
           </div>
           <div className="bg-[#0a0a0a] rounded-lg p-3 mb-4">
             <p className="text-white/70 text-sm leading-relaxed">
-              👋 Hello! How can we help you today?
+              <span className="inline-flex items-center gap-1.5">
+                <Hand size={14} className="inline" /> Hello! How can we help you today?
+              </span>
               <br />
               <br />
               We&apos;re here to assist with Aviation Security, Ground Handling, and Hydro Maintenance services.
@@ -74,15 +77,11 @@ export default function WhatsAppWidget() {
         >
           <path d="M20.5 3.5A12 12 0 003.5 20.5L2 22l1.5-5.5A12 12 0 1020.5 3.5z" />
         </svg>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="white"
+        <X
+          size={24}
+          color="white"
           className={`transition-transform duration-300 ${isOpen ? "scale-100" : "scale-0 absolute"}`}
-        >
-          <path d="M18 6L6 18M6 6l12 12" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-        </svg>
+        />
       </button>
     </div>
   );

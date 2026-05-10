@@ -10,6 +10,7 @@ import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsApp from "@/components/WhatsApp";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -36,6 +37,7 @@ export default function Home() {
       <Clients />
       <Services />
       <About />
+      <Partners />
       <Stats />
       <Gallery />
       <Contact />

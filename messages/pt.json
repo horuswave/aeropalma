@@ -2,66 +2,149 @@
   "nav": {
     "services": "Serviços",
     "about": "Sobre",
-    "clients": "Clientes",
+    "partners": "Parceiros",
     "gallery": "Galeria",
     "contact": "Contacto",
     "cta": "Fale Connosco"
   },
   "hero": {
-    "label": "Operadora de Aeroporto de Afungi",
-    "title1": "Elevando os",
-    "titleAccent": "Padrões",
-    "title2": "da Aviação em Moçambique.",
-    "description": "A AeroPalma é uma empresa moçambicana que oferece serviços de segurança aeronáutica, manutenção hidráulica e assistência em terra de classe mundial aos clientes mais exigentes do sector energético.",
+    "label": "O Primeiro Operador Privado de Aeroporto de Moçambique",
+    "title1": "Operações",
+    "titleAccent": "Aeroportuárias",
+    "title2": "de Classe Mundial em Moçambique.",
+    "description": "A AeroPalma é o primeiro operador privado de aeroporto de Moçambique — prestando serviços de gestão aeroportuária, manutenção e segurança aeronáutica de classe mundial ao sector LNG no Aeroporto de Afungi.",
     "ctaPrimary": "Os Nossos Serviços",
     "ctaSecondary": "Contacte-nos",
-    "stat1Value": "3+", "stat1Label": "Serviços Principais",
-    "stat2Value": "2",  "stat2Label": "Clientes Globais",
-    "stat3Value": "100%","stat3Label": "Moçambicana"
+    "stat1Value": "4+",
+    "stat1Label": "Serviços Principais",
+    "stat2Value": "2",
+    "stat2Label": "Clientes Globais",
+    "stat3Value": "100%",
+    "stat3Label": "Moçambicana"
   },
   "clients": {
     "label": "Confiado Por",
-    "tagline": "A servir o sector energético no Aeroporto de Afungi"
+    "tagline": "A servir o sector LNG no Aeroporto de Afungi"
   },
   "services": {
     "sectionLabel": "O Que Fazemos",
-    "title": "Três pilares de",
+    "title": "Quatro pilares de",
     "titleAccent": "excelência aeronáutica.",
-    "subtitle": "Cada serviço que prestamos é construído sobre anos de experiência operacional e um compromisso inabalável com a segurança.",
+    "subtitle": "Cada serviço que prestamos é construído sobre anos de experiência operacional e um compromisso inabalável com a segurança, alinhado com as normas IACM e ICAO.",
     "cta": "Solicitar Orçamento",
     "items": [
       {
         "id": "01",
-        "title": "Serviços de Segurança Aeronáutica",
-        "description": "Operações de segurança aeroportuária abrangentes, garantindo total conformidade regulatória. O nosso pessoal qualificado assegura controlo de perímetro, triagem de passageiros, gestão de acessos e avaliação de ameaças segundo os mais elevados padrões internacionais.",
-        "features": ["Controlo de Perímetro", "Triagem de Passageiros", "Gestão de Acessos", "Avaliação de Ameaças"]
+        "title": "Gestão Aeroportuária",
+        "description": "Como primeiro operador privado de aeroporto de Moçambique, a AeroPalma assegura a gestão abrangente do Aeroporto de Afungi — a porta de entrada estratégica para o sector LNG de Moçambique. Gerimos as operações diárias, a conformidade regulatória e a melhoria contínua dos serviços.",
+        "features": [
+          "Gestão de Operações",
+          "Conformidade Regulatória",
+          "Supervisão de Segurança",
+          "Apoio ao Sector LNG"
+        ]
       },
       {
         "id": "02",
-        "title": "Manutenção Hidráulica",
-        "description": "Serviços especializados de inspecção, manutenção e certificação de sistemas de abastecimento de combustível. Mantemos a sua infraestrutura de combustível aeronáutico em condições operacionais máximas, reduzindo paragens e garantindo operações contínuas.",
-        "features": ["Inspecção de Hidrantes", "Certificação de Sistemas", "Manutenção Preventiva", "Resposta de Emergência"]
+        "title": "Manutenção Aeroportuária",
+        "description": "Manutenção especializada de infraestruturas, equipamentos e sistemas aeroportuários. Da iluminação de pistas e instalações terminais aos sistemas críticos de abastecimento de combustível — mantemos o Aeroporto de Afungi em condições operacionais máximas.",
+        "features": [
+          "Manutenção de Infraestruturas",
+          "Sistemas de Hidrantes",
+          "Manutenção de Equipamentos",
+          "Programas Preventivos"
+        ]
       },
       {
         "id": "03",
-        "title": "Serviços de Assistência em Terra",
-        "description": "Suporte completo de rampa e apoio em terra para aeronaves comerciais e privadas. Do sinaleiro e manuseamento de bagagens ao reboque de aeronaves e serviços de cabine — precisos, seguros e dentro do horário.",
-        "features": ["Sinalização de Aeronaves", "Manuseamento de Bagagens", "Reboque de Aeronaves", "Serviços de Cabine"]
+        "title": "Serviços de Segurança Aeronáutica",
+        "description": "Operações de segurança aeroportuária abrangentes, garantindo total conformidade com as normas IACM e ICAO. O nosso pessoal qualificado assegura controlo de perímetro, triagem de passageiros, gestão de acessos e avaliação de ameaças segundo os mais elevados padrões internacionais.",
+        "features": [
+          "Controlo de Perímetro",
+          "Triagem de Passageiros",
+          "Gestão de Acessos",
+          "Avaliação de Ameaças"
+        ]
+      },
+      {
+        "id": "04",
+        "title": "Assistência em Terra",
+        "description": "Suporte completo de rampa e apoio em terra para aeronaves comerciais e privadas ao serviço do sector LNG. Do sinaleiro e manuseamento de bagagens ao reboque de aeronaves e serviços de cabine — precisos, seguros e dentro do horário.",
+        "features": [
+          "Sinalização de Aeronaves",
+          "Manuseamento de Bagagens",
+          "Reboque de Aeronaves",
+          "Serviços de Cabine"
+        ]
       }
     ]
   },
   "about": {
     "sectionLabel": "Quem Somos",
-    "title": "O principal parceiro aeroportuário de",
-    "titleAccent": "Moçambique.",
-    "body1": "A AeroPalma é uma empresa orgulhosamente moçambicana que opera no Aeroporto de Afungi, servindo as necessidades aeronáuticas especializadas do sector energético global com experiência local e padrões internacionais.",
-    "body2": "Desde a segurança de aeronaves até à gestão de operações em terra e manutenção de infraestruturas críticas de combustível — as nossas equipas operam com precisão 24/7, porque na aviação, a fiabilidade não é negociável.",
+    "title": "O primeiro operador privado de aeroporto",
+    "titleAccent": "de Moçambique.",
+    "body1": "A AeroPalma é uma empresa orgulhosamente moçambicana e o primeiro operador privado de aeroporto do país — operando no Aeroporto de Afungi, a porta de entrada estratégica para o sector LNG de Moçambique, ao serviço da TotalEnergies e ExxonMobil com experiência local e padrões internacionais.",
+    "body2": "Da gestão aeroportuária e segurança à assistência em terra e manutenção de infraestruturas — as nossas equipas operam com precisão 24/7, porque na aviação, a fiabilidade não é negociável. Estamos totalmente alinhados com as normas IACM e ICAO.",
     "cta": "Trabalhe Connosco",
     "badges": [
-      { "icon": "🇲🇿", "title": "100% Moçambicana", "desc": "Propriedade e gestão local" },
-      { "icon": "✈️", "title": "Aeroporto de Afungi", "desc": "Localização estratégica" },
-      { "icon": "🛡️", "title": "Alinhado com ICAO", "desc": "Padrões internacionais de segurança" },
-      { "icon": "⚡", "title": "Operações 24/7", "desc": "Sempre disponível, sempre pronto" }
+      {
+        "icon": "🇲🇿",
+        "title": "100% Moçambicana",
+        "desc": "Propriedade e gestão local"
+      },
+      {
+        "icon": "✈️",
+        "title": "Aeroporto de Afungi",
+        "desc": "Porta de entrada LNG"
+      },
+      {
+        "icon": "🛡️",
+        "title": "IACM & ICAO",
+        "desc": "Duplo alinhamento regulatório"
+      },
+      {
+        "icon": "⚡",
+        "title": "Operações 24/7",
+        "desc": "Sempre disponível, sempre pronto"
+      }
+    ]
+  },
+  "partners": {
+    "sectionLabel": "Os Nossos Parceiros",
+    "title": "Construído sobre",
+    "titleAccent": "parcerias de confiança.",
+    "subtitle": "A AeroPalma opera numa rede de parceiros institucionais e organismos reguladores que garantem os mais elevados padrões de segurança e serviço.",
+    "items": [
+      {
+        "category": "Parceiros Principais",
+        "list": [
+          {
+            "name": "EDM — Serviços de Navegação Aérea",
+            "desc": "Garantindo uma gestão de tráfego aéreo segura e eficiente no Aeroporto de Afungi."
+          },
+          {
+            "name": "INAM — Serviços Meteorológicos Aeronáuticos",
+            "desc": "Fornecendo dados meteorológicos precisos, essenciais para a segurança das operações de voo."
+          },
+          {
+            "name": "Petromoc — Parceiro de Serviços de Combustível",
+            "desc": "Abastecimento fiável de combustível de aviação para operações de voo ininterruptas."
+          }
+        ]
+      },
+      {
+        "category": "Normas e Reguladores",
+        "list": [
+          {
+            "name": "IACM — Instituto de Aviação Civil de Moçambique",
+            "desc": "A autoridade nacional de aviação civil que regula todas as operações nos aeroportos moçambicanos."
+          },
+          {
+            "name": "ICAO — Organização Internacional da Aviação Civil",
+            "desc": "O quadro regulatório global que orienta os nossos padrões operacionais e de segurança."
+          }
+        ]
+      }
     ]
   },
   "stats": {
@@ -69,10 +152,30 @@
     "title": "Desempenho que fala",
     "titleAccent": "por si mesmo.",
     "items": [
-      { "value": "3", "suffix": "+", "label": "Serviços Principais", "desc": "Suporte aeronáutico completo" },
-      { "value": "24", "suffix": "/7", "label": "Operações", "desc": "Disponibilidade permanente" },
-      { "value": "2", "suffix": "", "label": "Clientes Globais", "desc": "TotalEnergies & ExxonMobil" },
-      { "value": "100", "suffix": "%", "label": "Moçambicana", "desc": "Orgulhosa propriedade local" }
+      {
+        "value": "4",
+        "suffix": "+",
+        "label": "Serviços Principais",
+        "desc": "Operações aeroportuárias completas"
+      },
+      {
+        "value": "24",
+        "suffix": "/7",
+        "label": "Operações",
+        "desc": "Disponibilidade permanente"
+      },
+      {
+        "value": "2",
+        "suffix": "",
+        "label": "Clientes Globais",
+        "desc": "TotalEnergies & ExxonMobil"
+      },
+      {
+        "value": "100",
+        "suffix": "%",
+        "label": "Moçambicana",
+        "desc": "Orgulhosa propriedade local"
+      }
     ]
   },
   "gallery": {
@@ -80,9 +183,9 @@
     "title": "Operações em",
     "titleAccent": "movimento.",
     "items": [
-      { "label": "Operações em Terra" },
+      { "label": "Operações Aeroportuárias" },
       { "label": "Segurança Aeronáutica" },
-      { "label": "Serviços de Rampa" },
+      { "label": "Assistência em Terra" },
       { "label": "Sistemas de Combustível" },
       { "label": "Vista da Pista" }
     ]
@@ -91,7 +194,7 @@
     "sectionLabel": "Entre em Contacto",
     "title": "Pronto para elevar as suas",
     "titleAccent": "operações?",
-    "description": "Contacte a nossa equipa para discutir como a AeroPalma pode apoiar as suas operações aeronáuticas e energéticas no Aeroporto de Afungi.",
+    "description": "Contacte a nossa equipa para discutir como a AeroPalma pode apoiar as suas operações aeronáuticas e energéticas LNG no Aeroporto de Afungi.",
     "whatsappLabel": "WhatsApp",
     "locationLabel": "Localização",
     "locationValue": "Aeroporto de Afungi, Moçambique",
@@ -106,19 +209,30 @@
     "placeholderEmail": "joao@empresa.com",
     "placeholderService": "Seleccione um serviço…",
     "placeholderMessage": "Fale-nos sobre os seus requisitos operacionais…",
-    "serviceOptions": ["Serviços de Segurança Aeronáutica", "Manutenção Hidráulica", "Serviços de Assistência em Terra", "Múltiplos Serviços"],
+    "serviceOptions": [
+      "Gestão Aeroportuária",
+      "Manutenção Aeroportuária",
+      "Serviços de Segurança Aeronáutica",
+      "Assistência em Terra",
+      "Múltiplos Serviços"
+    ],
     "submitBtn": "Enviar via WhatsApp",
     "successTitle": "Mensagem Enviada!",
     "successBody": "O WhatsApp foi aberto. Entraremos em contacto brevemente.",
     "successBtn": "Enviar Outra"
   },
   "footer": {
-    "tagline": "O principal operador aeroportuário de Moçambique no Aeroporto de Afungi.",
+    "tagline": "O primeiro operador privado de aeroporto de Moçambique no Aeroporto de Afungi.",
     "services": "Serviços",
     "company": "Empresa",
     "clients": "Clientes",
-    "serviceLinks": ["Segurança Aeronáutica", "Manutenção Hidráulica", "Assistência em Terra"],
-    "companyLinks": ["Sobre", "Galeria", "Clientes", "Contacto"],
+    "serviceLinks": [
+      "Gestão Aeroportuária",
+      "Manutenção Aeroportuária",
+      "Segurança Aeronáutica",
+      "Assistência em Terra"
+    ],
+    "companyLinks": ["Sobre", "Galeria", "Parceiros", "Contacto"],
     "copyright": "Todos os direitos reservados."
   },
   "whatsapp": {

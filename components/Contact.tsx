@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "@/i18n";
+import { Phone, MapPin, Plane } from "lucide-react";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -31,6 +32,11 @@ export default function Contact() {
     display: "block", marginBottom: "8px",
   };
 
+  const contactItems = [
+    { icon: <Phone size={20} color="#CE5605" />, label: t("whatsappLabel"), value: "+258 851 013 008", href: "https://wa.me/258851013008" },
+    { icon: <MapPin size={20} color="#CE5605" />, label: t("locationLabel"), value: t("locationValue"), href: "#" },
+  ];
+
   return (
     <section id="contact" style={{ padding: "clamp(60px, 10vw, 120px) 0", background: "var(--bg-secondary)" }}>
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px, 5vw, 40px)" }}>
@@ -46,16 +52,15 @@ export default function Contact() {
               {t("description")}
             </p>
 
-            {[
-              { icon: "📞", label: t("whatsappLabel"), value: "+258 851 013 008", href: "https://wa.me/258851013008" },
-              { icon: "📍", label: t("locationLabel"), value: t("locationValue"), href: "#" },
-            ].map((c) => (
+            {contactItems.map((c) => (
               <a key={c.label} href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined}
                 style={{ display: "flex", alignItems: "center", gap: "20px", padding: "20px 24px", background: "var(--card-bg)", border: "1px solid var(--border)", borderRadius: "8px", marginBottom: "12px", textDecoration: "none", transition: "all 0.25s ease" }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(206,86,5,0.4)"; e.currentTarget.style.transform = "translateX(4px)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.transform = "none"; }}
               >
-                <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "rgba(206,86,5,0.1)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "20px", flexShrink: 0 }}>{c.icon}</div>
+                <div style={{ width: "44px", height: "44px", borderRadius: "50%", background: "rgba(206,86,5,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  {c.icon}
+                </div>
                 <div>
                   <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--text-secondary)" }}>{c.label}</div>
                   <div style={{ fontSize: "15px", fontWeight: 700, color: "var(--text-primary)", marginTop: "2px" }}>{c.value}</div>
@@ -68,7 +73,9 @@ export default function Contact() {
           <div style={{ background: "var(--card-bg)", border: "1px solid var(--border)", borderRadius: "8px", padding: "clamp(24px, 4vw, 48px)" }}>
             {sent ? (
               <div style={{ textAlign: "center", padding: "40px 0" }}>
-                <div style={{ fontSize: "48px", marginBottom: "16px" }}>✈️</div>
+                <div style={{ display: "flex", justifyContent: "center", marginBottom: "16px" }}>
+                  <Plane size={48} color="#CE5605" />
+                </div>
                 <h3 style={{ fontSize: "24px", fontWeight: 900, color: "#CE5605", marginBottom: "12px" }}>{t("successTitle")}</h3>
                 <p style={{ color: "var(--text-secondary)", fontSize: "15px" }}>{t("successBody")}</p>
                 <button onClick={() => setSent(false)} className="btn-orange" style={{ marginTop: "24px" }}>{t("successBtn")}</button>

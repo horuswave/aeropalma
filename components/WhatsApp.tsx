@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "@/i18n";
+import { MessageCircle } from "lucide-react";
 
 export default function WhatsApp() {
   const t = useTranslations("whatsapp");
@@ -16,8 +17,9 @@ export default function WhatsApp() {
         opacity: hovered ? 1 : 0,
         transform: hovered ? "translateX(0) scale(1)" : "translateX(8px) scale(0.95)",
         transition: "all 0.25s ease", pointerEvents: "none", fontFamily: "'Lato', sans-serif",
+        display: "flex", alignItems: "center", gap: "6px",
       }}>
-        💬 {t("tooltip")}
+        <MessageCircle size={14} /> {t("tooltip")}
       </div>
       <a
         href="https://wa.me/258851013008"
