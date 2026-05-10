@@ -215,19 +215,19 @@ export default function OwnerDashboard() {
           }}
         >
           <div style={{ textAlign: "center", marginBottom: "28px" }}>
-            <div style={{ fontSize: "36px", marginBottom: "8px" }}>
-              <FaPlane style={{ margin: "0 auto", display: "block" }} />
-            </div>
-            <h1
+            <div
               style={{
-                fontSize: "20px",
-                fontWeight: 900,
-                color: "var(--text-primary)",
-                marginBottom: "4px",
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: "16px",
               }}
             >
-              AeroPalma
-            </h1>
+              <img
+                src="/logo.svg"
+                alt="AeroPalma"
+                style={{ height: "64px", width: "auto" }}
+              />
+            </div>
             <span
               style={{
                 fontSize: "11px",
@@ -770,16 +770,11 @@ function TopBar({
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-        <FaPlane size={20} />
-        <span
-          style={{
-            fontSize: "16px",
-            fontWeight: 900,
-            color: "var(--text-primary)",
-          }}
-        >
-          AeroPalma
-        </span>
+        <img
+          src="/logo.svg"
+          alt="AeroPalma"
+          style={{ height: "40px", width: "auto" }}
+        />
         <span
           style={{
             fontSize: "10px",
