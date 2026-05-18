@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Owner {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   // bcrypt hashed
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  surveys SurveyResponse[]
+
+  @@map("owners")
+}
+
+model SurveyResponse {
+  id        String   @id @default(cuid())
+  
+  lang      String
+  ts        BigInt
+  
+  firstTime String?
+  
+  checkinWaitTime       Int?
+  checkinEfficiency     Int?
+  securityWaitTime      Int?
+  securityOrganization  Int?
+  staffProfessionalism  Int?
+  cleanlinessToilets    Int?
+  cleanlinessTerminal   Int?
+  
+  issues    String[]
+  
+  staffHelpful Int?
+  staffClear   Int?
+  
+  overallRating Int?
+  followUpEmail String?
+  
+  // Removed these three lines
+  // liked    String?
+  // improve  String?
+  // comments String?
+  
+  ownerId   String
+  owner     Owner    @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([ownerId])
+  @@index([ts])
+  @@index([lang])
+  @@map("survey_responses")
+}

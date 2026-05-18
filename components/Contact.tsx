@@ -12,13 +12,24 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const msg = "Hello AeroPalma,\n\nName: " + form.name + "\nCompany: " + form.company + "\nEmail: " + form.email + "\nService: " + form.service + "\n\nMessage: " + form.message;
-    window.open("https://wa.me/258851013008?text=" + encodeURIComponent(msg), "_blank");
-    setSent(true);
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    if (!res.ok) throw new Error("Failed");
+
+    setSent(true);
+  } catch (err) {
+    console.error(err);
+    alert("Failed to send message");
+  }
+};
   const field: React.CSSProperties = {
     width: "100%", background: "var(--card-bg)", border: "1px solid var(--border)",
     borderRadius: "4px", padding: "14px 18px", fontSize: "14px",
