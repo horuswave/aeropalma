@@ -204,7 +204,7 @@
       "Airport Ground Handling",
       "Multiple Services"
     ],
-    "submitBtn": "Send via WhatsApp",
+    "submitBtn": "Submit",
     "successTitle": "Message Sent!",
     "successBody": "WhatsApp has been opened. We'll get back to you shortly.",
     "successBtn": "Send Another"
