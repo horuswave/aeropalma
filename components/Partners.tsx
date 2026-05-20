@@ -4,7 +4,7 @@ import { useTranslations } from "@/i18n";
 
 // Map partner name prefixes to their logo files in /public/partners/
 const LOGO_MAP: Record<string, string> = {
-  EDM: "/partners/edm.png",
+  "Aeroportos de Moçambique": "/partners/aeroporto-mocambique.png",
   INAM: "/partners/INAM.png",
   Petromoc: "/partners/petromoc.png",
   ICAO: "/partners/ICAO.png",
