@@ -12,7 +12,7 @@
     "title1": "World-Class",
     "titleAccent": "Airport",
     "title2": "Operations in Mozambique.",
-    "description": "AeroPalma is Mozambique's first private airport operator — delivering world-class airport management, maintenance, and aviation security services to the LNG energy sector at Afungi Airport.",
+    "description": "AeroPalma is Mozambique's first private airport operator, delivering world-class airport management, maintenance, and aviation security services to the LNG energy sector at Afungi Airport.",
     "ctaPrimary": "Our Services",
     "ctaSecondary": "Contact Us",
     "stat1Value": "4+",
@@ -36,7 +36,7 @@
       {
         "id": "01",
         "title": "Airport Management",
-        "description": "As Mozambique's first private airport operator, AeroPalma delivers comprehensive airport management for Afungi Airport — the strategic gateway to Mozambique's LNG sector. We manage day-to-day operations, regulatory compliance, and continuous service improvement.",
+        "description": "As Mozambique's first private airport operator, AeroPalma delivers comprehensive airport management for Afungi Airport, the strategic gateway to Mozambique's LNG sector. We manage day-to-day operations, regulatory compliance, and continuous service improvement.",
         "features": [
           "Operations Management",
           "Regulatory Compliance",
@@ -47,7 +47,7 @@
       {
         "id": "02",
         "title": "Airport Maintenance",
-        "description": "Specialized maintenance of airport infrastructure, equipment, and systems. From runway lighting and terminal facilities to critical hydrant fueling systems — we keep Afungi Airport in peak operational condition, minimizing downtime for energy sector clients.",
+        "description": "Specialized maintenance of airport infrastructure, equipment, and systems. From runway lighting and terminal facilities to critical hydrant fueling systems, we keep Afungi Airport in peak operational condition, minimizing downtime for energy sector clients.",
         "features": [
           "Infrastructure Maintenance",
           "Hydrant Systems",
@@ -72,8 +72,8 @@
     "sectionLabel": "Who We Are",
     "title": "Mozambique's first private",
     "titleAccent": "airport operator.",
-    "body1": "AeroPalma is a proudly Mozambican company and the country's first private airport operator — operating at Afungi Airport, the strategic gateway to Mozambique's LNG sector, serving TotalEnergies and ExxonMobil with local expertise and international standards.",
-    "body2": "From airport management and security to infrastructure maintenance — our teams operate with precision 24/7, because in aviation, reliability is non-negotiable. We are fully aligned with IACM and ICAO standards.",
+    "body1": "AeroPalma is a proudly Mozambican company and the country's first private airport operator, operating at Afungi Airport, the strategic gateway to Mozambique's LNG sector, serving TotalEnergies and ExxonMobil with local expertise and international standards.",
+    "body2": "From airport management and security to infrastructure maintenance, our teams operate with precision 24/7, because in aviation, reliability is non-negotiable. We are fully aligned with IACM and ICAO standards.",
     "cta": "Work With Us",
     "badges": [
       {
@@ -108,15 +108,15 @@
         "category": "Key Partners",
         "list": [
           {
-            "name": "Aeroportos de Moçambique — Air Navigation Services",
+            "name": "Aeroportos de Moçambique - Air Navigation Services",
             "desc": "Ensuring safe and efficient air traffic management at Afungi Airport."
           },
           {
-            "name": "INAM — Aeronautical Meteorological Services",
+            "name": "INAM - Aeronautical Meteorological Services",
             "desc": "Providing accurate meteorological data critical for flight safety operations."
           },
           {
-            "name": "Petromoc — Fuel Services Partner",
+            "name": "Petromoc - Fuel Services Partner",
             "desc": "Reliable aviation fuel supply supporting uninterrupted flight operations."
           }
         ]
@@ -125,11 +125,11 @@
         "category": "Standards & Regulators",
         "list": [
           {
-            "name": "IACM — Instituto de Aviação Civil de Moçambique",
+            "name": "IACM - Instituto de Aviação Civil de Moçambique",
             "desc": "The national civil aviation authority governing all operations at Mozambican airports."
           },
           {
-            "name": "ICAO — International Civil Aviation Organization",
+            "name": "ICAO - International Civil Aviation Organization",
             "desc": "The global regulatory framework guiding our operational and safety standards."
           }
         ]

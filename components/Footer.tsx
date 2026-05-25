@@ -4,7 +4,14 @@ import { useTranslations } from "@/i18n";
 export default function Footer() {
   const t = useTranslations("footer");
   const serviceLinks = t.raw("serviceLinks") as string[];
-  const companyLinks = t.raw("companyLinks") as string[];
+const companyLabels = t.raw("companyLinks") as string[];
+
+const companyLinks = [
+  { label: companyLabels[0], href: "#about" },
+  { label: companyLabels[1], href: "#gallery" },
+  { label: companyLabels[2], href: "#partners" },
+  { label: companyLabels[3], href: "#contact" },
+  ];
 
   return (
     <footer
@@ -114,10 +121,10 @@ export default function Footer() {
             >
               {t("company")}
             </h4>
-            {companyLinks.map((s) => (
+            {companyLinks.map((item) => (
               <a
-                key={s}
-                href={"#" + s.toLowerCase()}
+                key={item.href}
+                href={item.href}
                 style={{
                   display: "block",
                   fontSize: "14px",
@@ -131,7 +138,7 @@ export default function Footer() {
                   (e.currentTarget.style.color = "rgba(255,255,255,0.55)")
                 }
               >
-                {s}
+                {item.label}
               </a>
             ))}
           </div>
