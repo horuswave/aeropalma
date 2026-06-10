@@ -16,9 +16,10 @@ export default function Services() {
   }>;
 
   const images = [
-    "/images/bh7IcEA25gCdipF7h6Nf.jpg",
-    "/images/airport_96088902.jpg",
-    "/images/1hHIc4022i0J0Nbm8vsd.jpg",
+    "/images/bh7IcEA25gCdipF7h6Nf.jpg", // 01 Airport Management
+    "/images/ground_handling.jpeg", // 02 Ground Handling Services
+    "/images/airport_96088902.png", // 03 Airport Maintenance
+    "/images/security.jpeg", // 04 Aviation Security
   ];
 
   useEffect(() => {
@@ -31,6 +32,9 @@ export default function Services() {
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
+
+  // Safe image with fallback
+  const currentImage = images[active] || "/images/placeholder.jpg";
 
   return (
     <section
@@ -145,11 +149,15 @@ export default function Services() {
               opacity: visible ? 1 : 0,
               transition: "opacity 0.5s ease",
               position: "relative",
+              background: "#f8f8f8",
             }}
           >
             <img
-              src={images[active]}
-              alt={items[active].title}
+              src={currentImage}
+              alt={items[active]?.title || ""}
+              onError={(e) => {
+                e.currentTarget.src = "/images/airport_96088902.jpg"; // fallback image
+              }}
               style={{
                 width: "100%",
                 height: "100%",
@@ -172,9 +180,10 @@ export default function Services() {
                 textTransform: "uppercase",
               }}
             >
-              {items[active].id}
+              {items[active]?.id}
             </div>
           </div>
+
           <div>
             <h3
               style={{

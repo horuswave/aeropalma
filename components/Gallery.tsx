@@ -4,7 +4,10 @@ import { useTranslations } from "@/i18n";
 
 const imageSrcs = [
   { src: "/images/b7hICDeeb4C7J1J5jApt.jpg", wide: true },
-  { src: "/images/177i23Ef13aD0CxU6d8v.jpg", wide: false },
+  {
+    src: "/images/security.jpeg", // 04 Aviation Security
+    wide: false,
+  },
   { src: "/images/177icd8i7d0AhHHfj6gn.jpg", wide: false },
   { src: "/images/bhhI2d8GccCj9lwI2Gai.jpg", wide: false },
   { src: "/images/sunset_105054187.jpg", wide: true },

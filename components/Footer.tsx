@@ -1,17 +1,48 @@
 "use client";
 import { useTranslations } from "@/i18n";
+import { useState } from "react";
 
 export default function Footer() {
   const t = useTranslations("footer");
   const serviceLinks = t.raw("serviceLinks") as string[];
-const companyLabels = t.raw("companyLinks") as string[];
+  const companyLabels = t.raw("companyLinks") as string[];
 
-const companyLinks = [
-  { label: companyLabels[0], href: "#about" },
-  { label: companyLabels[1], href: "#gallery" },
-  { label: companyLabels[2], href: "#partners" },
-  { label: companyLabels[3], href: "#contact" },
+  const companyLinks = [
+    { label: companyLabels[0], href: "#about" },
+    { label: companyLabels[1], href: "#gallery" },
+    { label: companyLabels[2], href: "#partners" },
+    { label: companyLabels[3], href: "#contact" },
   ];
+
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setStatus("loading");
+
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+        setEmail("");
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
 
   return (
     <footer
@@ -37,7 +68,7 @@ const companyLinks = [
             marginBottom: "clamp(40px, 6vw, 60px)",
           }}
         >
-          {/* Brand */}
+          {/* Brand + Newsletter */}
           <div>
             <div style={{ marginBottom: "20px" }}>
               <img
@@ -57,18 +88,86 @@ const companyLinks = [
             >
               {t("tagline")}
             </p>
-            <a
-              href="https://wa.me/258851013008"
-              target="_blank"
-              style={{
-                fontSize: "13px",
-                fontWeight: 700,
-                color: "#25D366",
-                textDecoration: "none",
-              }}
-            >
-              +258 851 013 008
-            </a>
+
+            {/* Newsletter */}
+            <div>
+              <h4
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.6)",
+                  marginBottom: "12px",
+                }}
+              >
+                {t("newsletter") || "Newsletter"}
+              </h4>
+              <form
+                onSubmit={handleSubscribe}
+                style={{ display: "flex", gap: "8px" }}
+              >
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder={t("newsletterPlaceholder") || "seu@email.com"}
+                  required
+                  style={{
+                    flex: 1,
+                    padding: "12px 14px",
+                    background: "rgba(255,255,255,0.08)",
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    borderRadius: "6px",
+                    color: "white",
+                    fontSize: "14px",
+                  }}
+                />
+                <button
+                  type="submit"
+                  disabled={status === "loading"}
+                  style={{
+                    padding: "12px 24px",
+                    background: "#CE5605",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "6px",
+                    fontWeight: 700,
+                    cursor: "pointer",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {status === "loading"
+                    ? "..."
+                    : t("subscribe") || "Subscrever"}
+                </button>
+              </form>
+
+              {status === "success" && (
+                <p
+                  style={{
+                    color: "#4ade80",
+                    fontSize: "13px",
+                    marginTop: "8px",
+                  }}
+                >
+                  {t("subscribeSuccess") ||
+                    "Obrigado! Inscrição realizada com sucesso."}
+                </p>
+              )}
+              {status === "error" && (
+                <p
+                  style={{
+                    color: "#f87171",
+                    fontSize: "13px",
+                    marginTop: "8px",
+                  }}
+                >
+                  {t("subscribeError") ||
+                    "Erro ao subscrever. Tente novamente."}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Services */}
@@ -204,9 +303,6 @@ const companyLinks = [
         @media (max-width: 480px) {
           .footer-grid {
             grid-template-columns: 1fr !important;
-          }
-          .footer-grid > div:first-child {
-            grid-column: span 1;
           }
         }
       `}</style>

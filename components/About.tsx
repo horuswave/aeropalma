@@ -100,7 +100,7 @@ export default function About() {
               }}
             >
               <img
-                src="/images/airport_96088902.jpg"
+                src="/images/airport_96088902.png"
                 alt="Airport operations"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />

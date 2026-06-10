@@ -30,24 +30,37 @@
     "sectionLabel": "O Que Fazemos",
     "title": "Quatro pilares de",
     "titleAccent": "excelência aeronáutica.",
-    "subtitle": "Cada serviço que prestamos é construído sobre anos de experiência operacional e um compromisso inabalável com a segurança, alinhado com as normas da IACM e da ICAO.",
+    "subtitle": "Cada serviço que prestamos é construído com base em anos de experiência operacional e num compromisso inabalável com a segurança, em conformidade com as normas da IACM e da OACI.",
     "cta": "Solicitar Orçamento",
     "items": [
       {
         "id": "01",
-        "title": "Gestão Aeroportuária",
-        "description": "Como primeiro operador privado de aeroportos de Moçambique, a AeroPalma assegura a gestão completa do Aeroporto de Afungi, a porta de entrada estratégica para o sector de LNG no país. Gerimos as operações diárias, a conformidade regulatória e a melhoria contínua dos serviços.",
+        "title": "Gestão de Aeroporto",
+        "description": "Como o primeiro operador privado de aeroportos de Moçambique, a AeroPalma presta uma gestão completa do Aeroporto de Afungi, porta de entrada estratégica para o sector de GNL de Moçambique. Gerimos as operações diárias, o cumprimento regulamentar e a melhoria contínua dos serviços.",
         "features": [
           "Gestão de Operações",
-          "Conformidade Regulatória",
+          "Cumprimento Regulamentar",
           "Supervisão de Segurança",
-          "Apoio ao Sector de LNG"
+          "Apoio ao Sector de GNL"
         ]
       },
       {
         "id": "02",
-        "title": "Manutenção Aeroportuária",
-        "description": "Manutenção especializada de infraestruturas, equipamentos e sistemas aeroportuários. Da iluminação de pistas e instalações terminais aos sistemas críticos de abastecimento de combustível, mantemos o Aeroporto de Afungi em condições operacionais máximas.",
+        "title": "Serviços de Handling em Terra",
+        "description": "Operações completas de handling em terra no Aeroporto de Afungi, adaptadas às exigências únicas do sector de GNL de Moçambique. As nossas equipas dedicadas garantem viragens seguras e eficientes das aeronaves, desde a chegada até à partida, minimizando o tempo em terra e maximizando a continuidade operacional para os clientes do sector energético.",
+        "features": [
+          "Serviços de Rampa e Plataforma",
+          "Atendimento de Passageiros",
+          "Bagagem e Carga",
+          "Guiamento de Aeronaves",
+          "Coordenação de Abastecimento",
+          "Controlo de Carga e Peso"
+        ]
+      },
+      {
+        "id": "03",
+        "title": "Manutenção do Aeroporto",
+        "description": "Manutenção especializada da infraestrutura, equipamentos e sistemas do aeroporto. Desde a iluminação da pista e instalações do terminal até aos sistemas críticos de hidrantes de abastecimento, mantemos o Aeroporto de Afungi em condições operacionais ideais, minimizando o tempo de inatividade para os clientes do sector energético.",
         "features": [
           "Manutenção de Infraestruturas",
           "Sistemas de Hidrantes",
@@ -56,12 +69,12 @@
         ]
       },
       {
-        "id": "03",
-        "title": "Serviços de Segurança Aeronáutica",
-        "description": "Operações de segurança aeroportuária abrangentes, garantindo total conformidade com as normas da IACM e da ICAO. O nosso pessoal qualificado assegura controlo de perímetro, triagem de passageiros, gestão de acessos e avaliação de ameaças segundo os mais elevados padrões internacionais.",
+        "id": "04",
+        "title": "Segurança Aeronáutica",
+        "description": "Operações completas de segurança do lado ar que garantem o total cumprimento das normas da IACM e da OACI. O nosso pessoal qualificado executa controlo do perímetro, rastreio de passageiros, gestão de acessos e avaliação de ameaças de acordo com os mais altos padrões internacionais.",
         "features": [
-          "Controlo de Perímetro",
-          "Triagem de Passageiros",
+          "Controlo do Perímetro",
+          "Rastreio de Passageiros",
           "Gestão de Acessos",
           "Avaliação de Ameaças"
         ]
@@ -219,9 +232,26 @@
       "Segurança Aeronáutica"
     ],
     "companyLinks": ["Sobre", "Galeria", "Parceiros", "Contacto"],
-    "copyright": "Todos os direitos reservados."
+    "copyright": "Todos os direitos reservados.",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "seu@email.com",
+    "subscribe": "Subscrever",
+    "subscribeSuccess": "Obrigado! Inscrição realizada com sucesso.",
+    "subscribeError": "Erro ao subscrever. Tente novamente."
   },
   "whatsapp": {
     "tooltip": "Fale connosco no WhatsApp"
+  },
+  "location": {
+    "langCode": "pt",
+    "sectionLabel": "A Nossa Localização",
+    "title": "Aeroporto de Afungi",
+    "subtitle": "Porta de entrada estratégica para o sector de GNL de Moçambique • Palma, Cabo Delgado",
+    "airportName": "Aeroporto de Afungi, Moçambique",
+    "description": "Localizado na Península de Afungi, na Província de Cabo Delgado, o nosso aeroporto serve como o principal hub logístico do projeto Mozambique LNG, apoiando a TotalEnergies, ExxonMobil e outras operações do sector energético.",
+    "coordinatesLabel": "Coordenadas",
+    "locationLabel": "Localização",
+    "locationValue": "Palma, Província de Cabo Delgado",
+    "viewOnMaps": "Ver no Google Maps"
   }
 }

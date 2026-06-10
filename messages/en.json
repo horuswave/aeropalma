@@ -46,6 +46,19 @@
       },
       {
         "id": "02",
+        "title": "Ground Handling Services",
+        "description": "End-to-end ground handling operations at Afungi Airport, supporting the unique demands of Mozambique's LNG sector. Our dedicated teams ensure safe, efficient aircraft turnarounds from arrival to departure minimising ground time and maximising operational continuity for energy sector clients.",
+        "features": [
+          "Ramp & Apron Services",
+          "Passenger Handling",
+          "Baggage & Cargo",
+          "Aircraft Marshalling",
+          "Fuelling Coordination",
+          "Load & Weight Control"
+        ]
+      },
+      {
+        "id": "03",
         "title": "Airport Maintenance",
         "description": "Specialized maintenance of airport infrastructure, equipment, and systems. From runway lighting and terminal facilities to critical hydrant fueling systems, we keep Afungi Airport in peak operational condition, minimizing downtime for energy sector clients.",
         "features": [
@@ -56,8 +69,8 @@
         ]
       },
       {
-        "id": "03",
-        "title": "Aviation Security Services",
+        "id": "04",
+        "title": "Aviation Security",
         "description": "Comprehensive airside security operations ensuring full regulatory compliance with IACM and ICAO standards. Our trained personnel deliver perimeter control, passenger screening, access management, and threat assessment to the highest international standards.",
         "features": [
           "Perimeter Control",
@@ -199,9 +212,9 @@
     "placeholderMessage": "Tell us about your operational requirements…",
     "serviceOptions": [
       "Airport Management",
+      "Ground Handling Services",
       "Airport Maintenance",
-      "Aviation Security Services",
-      "Airport Ground Handling",
+      "Aviation Security",
       "Multiple Services"
     ],
     "submitBtn": "Submit",
@@ -214,16 +227,33 @@
     "services": "Services",
     "company": "Company",
     "clients": "Clients",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "your@email.com",
+    "subscribe": "Subscribe",
+    "subscribeSuccess": "Thank you! Subscription successful.",
+    "subscribeError": "Error subscribing. Please try again.",
+    "copyright": "All rights reserved.",
     "serviceLinks": [
       "Airport Management",
+      "Ground Handling Services",
       "Airport Maintenance",
-      "Aviation Security",
-      "Ground Handling"
+      "Aviation Security"
     ],
-    "companyLinks": ["About", "Gallery", "Partners", "Contact"],
-    "copyright": "All rights reserved."
+    "companyLinks": ["About", "Gallery", "Partners", "Contact"]
   },
   "whatsapp": {
     "tooltip": "Chat with us on WhatsApp"
+  },
+  "location": {
+    "langCode": "en",
+    "sectionLabel": "Our Location",
+    "title": "Afungi Airport",
+    "subtitle": "Strategic gateway to Mozambique’s LNG sector • Palma, Cabo Delgado",
+    "airportName": "Afungi Airport, Mozambique",
+    "description": "Located on the Afungi Peninsula in Cabo Delgado Province, our airport serves as the primary logistical hub for the Mozambique LNG project, supporting TotalEnergies, ExxonMobil, and other energy sector operations.",
+    "coordinatesLabel": "Coordinates",
+    "locationLabel": "Location",
+    "locationValue": "Palma, Cabo Delgado Province",
+    "viewOnMaps": "View on Google Maps"
   }
 }
