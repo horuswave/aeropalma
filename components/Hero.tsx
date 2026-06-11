@@ -26,7 +26,7 @@ export default function Hero() {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: `url(/images/177Ic40dEF3HiZxuqAEU.jpg)`,
+          backgroundImage: `url(/images/177Ic40dEF3HiZxuqAEU.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center 40%",
           transform: loaded ? "scale(1)" : "scale(1.05)",
