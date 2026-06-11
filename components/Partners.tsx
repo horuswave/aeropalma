@@ -9,6 +9,7 @@ const LOGO_MAP: Record<string, string> = {
   Petromoc: "/partners/petromoc.png",
   ICAO: "/partners/ICAO.png",
   IACM: "/partners/IACM.jpg",
+  ISCO: "/partners/ISCO.png",
 };
 
 function PartnerLogo({ name }: { name: string }) {
