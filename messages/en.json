@@ -4,8 +4,10 @@
     "about": "About",
     "partners": "Partners",
     "gallery": "Gallery",
+    "clients": "Clients",
     "contact": "Contact",
-    "cta": "Get In Touch"
+    "cta": "Get In Touch",
+    "survey": "Take Our Survey"
   },
   "hero": {
     "label": "Mozambique's First Private Airport Operator",
@@ -253,7 +255,7 @@
     "title": "Afungi Airport",
     "subtitle": "Strategic gateway to Mozambique’s LNG sector • Palma, Cabo Delgado",
     "airportName": "Afungi Airport, Mozambique",
-    "description": "Located on the Afungi Peninsula in Cabo Delgado Province, our airport serves as the primary logistical hub for the Mozambique LNG project, supporting TotalEnergies, ExxonMobil, and other energy sector operations.",
+    "description": "Located on the Afungi Peninsula in Cabo Delgado Province, our airport serves as the primary logistical hub for the Mozambique LNG project.",
     "coordinatesLabel": "Coordinates",
     "locationLabel": "Location",
     "locationValue": "Palma, Cabo Delgado Province",

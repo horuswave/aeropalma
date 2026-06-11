@@ -11,6 +11,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsApp from "@/components/WhatsApp";
 import Partners from "@/components/Partners";
+import Location from "@/components/Location"; 
 
 export default function Home() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -22,7 +23,7 @@ export default function Home() {
       document.documentElement.setAttribute("data-theme", saved);
     }
   }, []);
-
+  
   const toggleTheme = () => {
     const next = theme === "light" ? "dark" : "light";
     setTheme(next);
@@ -40,6 +41,7 @@ export default function Home() {
       <Partners />
       <Stats />
       <Gallery />
+      <Location />
       <Contact />
       <Footer />
       <WhatsApp />

@@ -136,6 +136,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     { href: "#clients", label: t("clients") },
     { href: "#gallery", label: t("gallery") },
     { href: "#contact", label: t("contact") },
+    {href: `/${currentLocale}/survey`, label: t("survey") },
   ];
 
   const navBg = scrolled || menuOpen;

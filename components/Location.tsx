@@ -69,26 +69,7 @@ export default function Location() {
             alignItems: "center",
           }}
         >
-          {/* Map with Pin */}
-          <div
-            style={{
-              borderRadius: "12px",
-              overflow: "hidden",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-              aspectRatio: "16/9",
-              position: "relative",
-            }}
-          >
-            <iframe
-              src={`https://maps.google.com/maps?q=${lat},${lng}&hl=${t("langCode") || "pt"}&z=16&output=embed`}
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          
 
           {/* Info */}
           <div>
@@ -121,19 +102,7 @@ export default function Location() {
                 fontSize: "14px",
               }}
             >
-              <div>
-                <div
-                  style={{
-                    color: "var(--text-secondary)",
-                    marginBottom: "4px",
-                  }}
-                >
-                  {t("coordinatesLabel")}
-                </div>
-                <div style={{ fontWeight: 600, fontFamily: "monospace" }}>
-                  {lat.toFixed(6)}, {lng.toFixed(6)}
-                </div>
-              </div>
+              
               <div>
                 <div
                   style={{
@@ -147,15 +116,7 @@ export default function Location() {
               </div>
             </div>
 
-            <a
-              href={googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-orange"
-              style={{ marginTop: "32px", display: "inline-block" }}
-            >
-              {t("viewOnMaps")}
-            </a>
+           
           </div>
         </div>
       </div>

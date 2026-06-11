@@ -5,7 +5,9 @@
     "partners": "Parceiros",
     "gallery": "Galeria",
     "contact": "Contacto",
-    "cta": "Fale Connosco"
+    "clients":"Clientes",
+    "cta": "Fale Connosco",
+    "survey": "Complete o Nosso Survey"
   },
   "hero": {
     "label": "O Primeiro Operador Privado de Aeroportos de Moçambique",
@@ -251,7 +253,7 @@
     "title": "Aeroporto de Afungi",
     "subtitle": "Porta de entrada estratégica para o sector de GNL de Moçambique • Palma, Cabo Delgado",
     "airportName": "Aeroporto de Afungi, Moçambique",
-    "description": "Localizado na Península de Afungi, na Província de Cabo Delgado, o nosso aeroporto serve como o principal hub logístico do projeto Mozambique LNG, apoiando a TotalEnergies, ExxonMobil e outras operações do sector energético.",
+    "description": "Localizado na Península de Afungi, na Província de Cabo Delgado, o nosso aeroporto serve como o principal hub logístico do projeto Mozambique LNG.",
     "coordinatesLabel": "Coordenadas",
     "locationLabel": "Localização",
     "locationValue": "Palma, Província de Cabo Delgado",
