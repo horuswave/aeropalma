@@ -46,7 +46,7 @@ export default function Clients() {
 
           {/* TotalEnergies Logo - SVG */}
           <img
-            src="/clients/total.svg"
+            src="/clients/total.png"
             alt="TotalEnergies"
             style={{
               height: "52px",
