@@ -71,7 +71,7 @@ export default function Gallery() {
           className="gallery-l-layout"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(6, 1fr)", // Expanded to 6 sub-tracks for perfect mathematical splitting
+            gridTemplateColumns: "repeat(6, 1fr)",
             gap: "clamp(16px, 2.5vw, 24px)",
             maxWidth: "1180px",
             margin: "0 auto",
@@ -113,14 +113,6 @@ export default function Gallery() {
                 height: "100%",
                 objectFit: "cover",
                 transition: "transform 0.6s ease",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.75) 50%, transparent 80%)",
               }}
             />
             <div
@@ -181,14 +173,6 @@ export default function Gallery() {
             <div
               style={{
                 position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.8) 50%, transparent)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
                 bottom: "16px",
                 left: "16px",
                 fontSize: "11px",
@@ -244,14 +228,6 @@ export default function Gallery() {
             <div
               style={{
                 position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.8) 50%, transparent)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
                 bottom: "16px",
                 left: "16px",
                 fontSize: "11px",
@@ -265,7 +241,7 @@ export default function Gallery() {
             </div>
           </div>
 
-          {/* Small 3 - Bottom Left (Stretched across half of the row width) */}
+          {/* Small 3 - Bottom Left */}
           <div
             className="gallery-item small-3"
             style={{
@@ -274,7 +250,7 @@ export default function Gallery() {
               position: "relative",
               borderRadius: "12px",
               overflow: "hidden",
-              height: "260px", // Maintains clear vertical balance relative to the grid layout height
+              height: "260px",
               cursor: "pointer",
               opacity: visible ? 1 : 0,
               transform: visible ? "none" : "translateY(30px)",
@@ -307,14 +283,6 @@ export default function Gallery() {
             <div
               style={{
                 position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.8) 50%, transparent)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
                 bottom: "20px",
                 left: "20px",
                 fontSize: "12px",
@@ -328,7 +296,7 @@ export default function Gallery() {
             </div>
           </div>
 
-          {/* Small 4 - Bottom Right (Stretched across the other half of the row width) */}
+          {/* Small 4 - Bottom Right */}
           <div
             className="gallery-item small-4"
             style={{
@@ -365,14 +333,6 @@ export default function Gallery() {
                 height: "100%",
                 objectFit: "cover",
                 transition: "transform 0.6s ease",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                inset: 0,
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.8) 50%, transparent)",
               }}
             />
             <div
