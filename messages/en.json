@@ -204,7 +204,7 @@
     "title": "Ready to elevate your",
     "titleAccent": "operations?",
     "description": "Contact our team to discuss how AeroPalma can support your aviation and LNG energy operations at Afungi Airport.",
-    "whatsappLabel": "WhatsApp",
+    "whatsappLabel": "Email",
     "locationLabel": "Location",
     "locationValue": "Afungi Airport, Mozambique",
     "formTitle": "Send Us a Message",
@@ -227,7 +227,7 @@
     ],
     "submitBtn": "Submit",
     "successTitle": "Message Sent!",
-    "successBody": "WhatsApp has been opened. We'll get back to you shortly.",
+    "successBody": "Your message has been sent. We'll get back to you shortly.",
     "successBtn": "Send Another"
   },
   "footer": {
@@ -250,7 +250,7 @@
     "companyLinks": ["About", "Gallery", "Partners", "Contact"]
   },
   "whatsapp": {
-    "tooltip": "Chat with us on WhatsApp"
+    "tooltip": "Email us"
   },
   "location": {
     "langCode": "en",

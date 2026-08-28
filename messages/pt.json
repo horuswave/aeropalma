@@ -205,7 +205,7 @@
     "title": "Pronto para elevar as suas",
     "titleAccent": "operações?",
     "description": "Contacte a nossa equipa para discutir como a AeroPalma pode apoiar as suas operações aeronáuticas e energéticas de LNG no Aeroporto de Afungi.",
-    "whatsappLabel": "WhatsApp",
+    "whatsappLabel": "E-mail",
     "locationLabel": "Localização",
     "locationValue": "Aeroporto de Afungi, Moçambique",
     "formTitle": "Envie-nos uma Mensagem",
@@ -227,7 +227,7 @@
     ],
     "submitBtn": "Submeter",
     "successTitle": "Mensagem Enviada!",
-    "successBody": "O WhatsApp foi aberto. Entraremos em contacto brevemente.",
+    "successBody": "A sua mensagem foi enviada. Entraremos em contacto brevemente.",
     "successBtn": "Enviar Outra"
   },
   "footer": {
@@ -249,7 +249,7 @@
     "subscribeError": "Erro ao subscrever. Tente novamente."
   },
   "whatsapp": {
-    "tooltip": "Fale connosco no WhatsApp"
+    "tooltip": "Envie-nos um e-mail"
   },
   "location": {
     "langCode": "pt",

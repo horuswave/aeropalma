@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "@/i18n";
-import { Phone, MapPin, Plane } from "lucide-react";
+import { Mail, MapPin, Plane } from "lucide-react";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -44,7 +44,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   };
 
   const contactItems = [
-    { icon: <Phone size={20} color="#CE5605" />, label: t("whatsappLabel"), value: "+258 851 013 008", href: "https://wa.me/258851013008" },
+    { icon: <Mail size={20} color="#CE5605" />, label: t("whatsappLabel"), value: "info@aerpalma.aero", href: "mailto:info@aerpalma.aero" },
     { icon: <MapPin size={20} color="#CE5605" />, label: t("locationLabel"), value: t("locationValue"), href: "#" },
   ];
 
