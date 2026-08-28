@@ -133,7 +133,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
   const links = [
     { href: "#services", label: t("services") },
     { href: "#about", label: t("about") },
-    { href: "#clients", label: t("clients") },
+    // { href: "#clients", label: t("clients") },
     { href: "#gallery", label: t("gallery") },
     { href: "#contact", label: t("contact") },
     {href: `/${currentLocale}/survey`, label: t("survey") },

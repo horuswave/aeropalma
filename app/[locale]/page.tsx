@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Clients from "@/components/Clients";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Stats from "@/components/Stats";
@@ -35,7 +34,7 @@ export default function Home() {
     <main>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Hero />
-      <Clients />
+    
       <Services />
       <About />
       <Partners />

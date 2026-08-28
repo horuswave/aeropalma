@@ -243,7 +243,7 @@ export default function Footer() {
           </div>
 
           {/* Clients */}
-          <div>
+          {/* <div>
             <h4
               style={{
                 fontSize: "11px",
@@ -269,7 +269,7 @@ export default function Footer() {
                 {c}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div
